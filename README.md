@@ -9,7 +9,7 @@ This project implements a Flask-based AI Voice Assistant named **Maya**. It inte
 - Integrates with **OpenAI's DeepInfra API** for intelligent responses.
 
 ## Project Structure:
-
+```
 /voice-assistant
   ├── app.py                   # Flask backend
   ├── chatbot_deepinfra.py      # Your existing chatbot logic
@@ -17,7 +17,7 @@ This project implements a Flask-based AI Voice Assistant named **Maya**. It inte
   │   ├── index.html           # Frontend UI (HTML)
   ├── conversation.txt         # Predefined conversation data
   ├── requirements.txt         # Dependencies file
-
+```
 
 ## Prerequisites:
 - **Python 3.x**
