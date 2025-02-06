@@ -1,0 +1,14 @@
+
+    "hello": "Hello! How can I assist you?",
+    "what is the date": "Today's date is {date}.",
+    "what is the time": "The current time is {time}.",
+    "how are you": "I'm doing well, thank you for asking.",
+    "what is your name": "I'm a speech recognition and text-to-speech program.",
+    "who created you": "I was created by a team of students at SRM.",
+    "what can you do": "I can assist you with tasks like answering questions, providing information, and more.",
+    "bye": "Goodbye! Have a great day.",
+    "i am good": "That's great!",
+    "i am fine": "That's great!",
+    "i am doing good": "That's great!",
+    "can you make a timetable for me": "Wake up: 6:00 AM, Exercise: 6:30 AM to 7:30 AM, Breakfast: 8:00 AM, Work: 8:30 AM."
+
