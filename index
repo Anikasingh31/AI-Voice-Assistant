@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #chatbox {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to you AI Voice Assistant</h1>
+    <div id="chatbox">
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="startChat()">Start</button>
+        <p id="greeting"></p>
+        <button onclick="listenToSpeech()">Speak</button>
+        <p><strong>You:</strong> <span id="userText"></span></p>
+        <p><strong>Maya:</strong> <span id="botResponse"></span></p>
+    </div>
+
+    <script>
+        function startChat() {
+            const name = document.getElementById('nameInput').value;
+            if (name.trim() === '') {
+                alert("Please enter your name!");
+                return;
+            }
+            fetch('/start_chat', {
+                method: 'POST',
+                body: new URLSearchParams({ 'name': name }),
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('greeting').innerText = data.message;
+            });
+        }
+
+        function listenToSpeech() {
+            fetch('/listen', { method: 'POST' })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('userText').innerText = data.user_input;
+                document.getElementById('botResponse').innerText = data.response;
+            });
+        }
+    </script>
+
+</body>
+</html>
