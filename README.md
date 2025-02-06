@@ -66,3 +66,6 @@ Flask: Flask serves the frontend and handles API routes for starting the chat an
 DeepInfra API: The assistant uses DeepInfra (based on OpenAI's models) to handle complex user queries.
 
 
+### Contributors 
+  Anika Singh
+
