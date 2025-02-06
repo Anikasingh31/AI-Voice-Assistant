@@ -26,7 +26,7 @@ pip install pyttsx3 SpeechRecognition openai
 python deepinfra.py
 ```
 
-## **3. Running on NVIDIA Jetson (Optional):**
+ **3. Running on NVIDIA Jetson (Optional):**
 
 We tested this program on an NVIDIA Jetson due to its powerful GPU capabilities.
 In the future, if we decide to use a Local Language Model (LLM) instead of the DeepInfra API, we plan to leverage the Jetson's processing power for efficient model inference.
