@@ -59,14 +59,10 @@ Run the Flask app using the following command
 python app.py
 
 ```
-Additional Notes:
+### Additional Notes:
 Speech Recognition: The app uses Google’s Speech Recognition API for converting speech to text. Make sure you have a working microphone for this functionality.
 Text-to-Speech: The app uses pyttsx3 to generate speech output.
 Flask: Flask serves the frontend and handles API routes for starting the chat and listening to speech.
 DeepInfra API: The assistant uses DeepInfra (based on OpenAI's models) to handle complex user queries.
-Dependencies:
-  Flask
-  pyttsx3
-  SpeechRecognition
-  OpenAI (for DeepInfra API)
+
 
