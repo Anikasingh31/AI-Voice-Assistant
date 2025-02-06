@@ -32,6 +32,23 @@ This project implements a Flask-based AI Voice Assistant named **Maya**. It inte
 ```bash
 git clone https://github.com/yourusername/voice-assistant.git
 cd voice-assistant
+```
+### 1. Install Dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-### 2. Install Dependencies:
+### 3. API Key:
+You'll need an OpenAI API key for the DeepInfra API integration.
+Replace the api_key in the chatbot_deepinfra.py file with your actual OpenAI API key:
+
+```
+openai = OpenAI(
+    api_key="YOUR_API_KEY",
+    base_url="https://api.deepinfra.com/v1/openai",
+)
+```
+
+
+
 
