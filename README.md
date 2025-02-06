@@ -39,7 +39,6 @@ python deepinfra.py
 - If the microphone is not detected, check your audio input settings.
 - If DeepInfra API is unavailable, verify your API key and internet connection.
 
-\
 
 ## Contributors
 - Developed by students at **SRM Institute of Science and Technology**.
