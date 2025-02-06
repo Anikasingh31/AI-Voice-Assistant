@@ -32,5 +32,6 @@ This project implements a Flask-based AI Voice Assistant named **Maya**. It inte
 ```bash
 git clone https://github.com/yourusername/voice-assistant.git
 cd voice-assistant
-'''
+
+### 2. Install Dependencies:
 
